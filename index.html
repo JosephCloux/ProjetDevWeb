@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projet DevWeb</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- -->
+</head>
+  <body>
+    <header>
+    	<img src="images/logo.png" alt="Logo-SellGame"> </br>
+    	 <div id="barrenav"> 
+    	  <nav>
+			<ul id="MenuDeroulant">
+				<li><a href="index.html"><strong>Accueil</strong></a></li>
+				<li><a href=""><strong>Plateformes</strong></a>
+					<ul>
+						<li><a href="toppark.php"> PC </a></li>
+						<li><a href="topmanager.php"> Playstation 4 </a></li>
+						<li><a href="topmanager.php"> Xbox One </a></li>            
+					</ul>
+				</li>
+				<li><a href="services.php"><strong>Meilleures ventes</strong></a></li>
+				<li><a href="contact.php"><strong>Contact</strong></a></li>
+			</ul>
+
+    	  </nav>	
+    	 </div>
+    </header>
+
+
+    <section>
+       <article id="slideshow">	
+       	 <h2> Jeux du moment : </h2>
+		 <div class="container">
+			<div class="c_slider"></div>
+			 <div class="slider">
+				<figure>
+					<img src="images/asfd.png" alt="Assassin's Creed Origins" width="100%"/>
+				</figure>
+				<!--
+				<figure> 
+					<img src="images/calloffd.png" alt="Call Of Duty World War II" width="100%" />
+				</figure>
+				<figure>
+					<img src="images/pubg.png" alt="PlayerUnknown's Battlegrounds" width="100%" />
+				</figure>
+				<figure>
+					<img src="images/starwars.png" alt="Star Wars Battlefront II" width="100%" />	
+		  		</figure>   
+		  		-->
+			 </div>
+	       </div>
+	    <span id="timeline"></span>
+	   </article>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <!-- Script pour le menu déroulant -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+		$(document).ready( 
+		function()
+		{
+		var timeout    = 600;
+
+		var closetimer = 0;
+
+		var ddmenuitem = 0;
+
+		function MenuDeroulant_open()
+
+		{  MenuDeroulant_canceltimer();
+
+		MenuDeroulant_close();
+
+		ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
+
+		function MenuDeroulant_close()
+
+		{  if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+		function MenuDeroulant_timer()
+
+		{  closetimer = window.setTimeout(MenuDeroulant_close, timeout);}
+
+		function MenuDeroulant_canceltimer()
+
+		{  if(closetimer)
+
+		{  window.clearTimeout(closetimer);
+
+		closetimer = null;}}
+
+		$(document).ready(function()
+
+		{  $('#MenuDeroulant > li').bind('mouseover', MenuDeroulant_open)
+
+		$('#MenuDeroulant > li').bind('mouseout',  MenuDeroulant_timer)});
+
+		document.onclick = MenuDeroulant_close;
+
+		});
+		</script>
+
+
+  </body>
+</html>

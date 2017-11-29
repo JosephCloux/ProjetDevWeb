@@ -1,0 +1,115 @@
+body{
+	background-image: url("C:/Users/josep/Desktop/Projet DevWeb/images/fondsite.png");	
+	background-size: 100%;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin:auto;
+	background-color: #131313;
+}
+#barrenav{
+	width: screen;
+	height: 70px;
+	position: relative;
+	background-color: #363636;
+}
+header img{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	position: relative;
+}
+ 
+#MenuDeroulant {
+	position: relative;
+	text-align: center;
+	margin:auto;
+	width: 1000px;
+}
+
+
+#MenuDeroulant li {    
+float:left;
+list-style:none;
+font:1.2em Tahoma, Arial; /* La taille et la police du texte du menu */
+text-align:center;	
+}
+
+#MenuDeroulant li a {    
+display:block;
+background:#333333; /* Couleur de fond des titres du menu */
+padding:23px 12px;
+text-decoration:none;
+width:200px;
+color:#FFFFFF; /* Couleur de police des titres du menu */
+white-space:nowrap;
+border-right:#FFBC49 1px solid;
+border-left:#FFBC49 1px solid;
+}
+
+#MenuDeroulant li a:hover{    
+background:#FFBC49;
+color:#333;
+} /* Couleur de fond des titres du menu au survol de la souris */
+
+#MenuDeroulant li ul {
+margin:0;
+padding:0;
+position:absolute;
+visibility:hidden;
+border:1px solid white;
+font:1em Tahoma, Arial;
+}
+
+#MenuDeroulant li ul li {    
+float: none;
+display:inline;
+}
+
+#MenuDeroulant li ul li a {    
+min-width:90px;
+width:200px;
+background:#666666; /* Couleur de fond des items déroulant du menu*/
+border-bottom:white 1px solid;
+}
+
+#MenuDeroulant li ul li a:hover {    
+background:#FFBC49; /* Couleur de fond des items déroulant du menu au survol de la souris */
+color:#333;
+}
+section{
+	margin: auto;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.9);
+	width:1300px;
+	position: relative;
+	margin-top:213px;
+	z-index: -1;
+	padding-bottom: 20px;
+}
+article{
+	padding-top: 8px;
+}
+article h2{
+	font:2em Tahoma, Arial;
+	background-color: #333333;
+	text-align: center;
+	margin: auto;
+	width: 94%;
+	position: relative;
+	height: 40px;
+	color: #FFBC49;
+	margin-top: 15px;
+	border-radius: 10px 10px 0 0;
+}
+.container{
+	margin-top: -16px;
+}
+
+
+
+
+
